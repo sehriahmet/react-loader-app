@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-loader-app/static/css/main.64e4c1e9.css",
+    "main.js": "/react-loader-app/static/js/main.4712f85c.js",
+    "index.html": "/react-loader-app/index.html",
+    "main.64e4c1e9.css.map": "/react-loader-app/static/css/main.64e4c1e9.css.map",
+    "main.4712f85c.js.map": "/react-loader-app/static/js/main.4712f85c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64e4c1e9.css",
+    "static/js/main.4712f85c.js"
+  ]
+}

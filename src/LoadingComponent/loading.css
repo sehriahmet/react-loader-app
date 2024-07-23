@@ -1,0 +1,386 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+
+.AnimationElements {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.Double{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  /*
+    .AnimationElements .AnimationElements {
+      width: 149.5px;
+      height: 150.5px;
+    }
+  */ 
+
+
+  .Double .OrangeBox {
+    width: 24px;
+    height: 24px;
+    margin: 0 3px 8px 0;
+    border-radius: 18px;
+    border: solid 15px #ff6100;
+    background-color: #ff6100;
+    position: relative;
+    z-index: 3;
+  }
+
+
+  .AnimationElements .Double .Vector1 {
+    transform: translate(0px, -2px);
+    padding-top: 14px;
+    z-index: 2;
+    
+    
+    transform: translate(-58px, -2px);
+    animation: PopVector1 2s infinite;
+   
+  }
+
+  .AnimationElements .Double .BlueBox {
+    transform: translate(0px, 4px);
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin: 8px 7.5px 0 3px;
+    border-radius: 18px;
+    border: solid 15px #5369ab;
+    background-color: #5369ab;
+    
+    z-index: 1;
+
+    
+    transform: translate(-107px, -8px);
+    animation: PopBlueBox 2s infinite;
+   
+
+  }
+
+
+
+  @keyframes PopVector1 {
+
+    0% {
+      transform: translate(-58px, -2px);
+    }
+
+    4% {
+      transform: translate(15px, 3px);
+    }
+
+    5.6% {
+      transform: translate(-3px, -3px);
+    }
+
+    6.4% {
+      transform: translate(3px, -2px);
+    }
+
+    8% {
+      transform: translate(0px, -2px);
+    }
+
+    90% {
+      transform: translate(0px, -2px);
+    }
+  }
+
+  @keyframes PopBlueBox{
+
+    0% {
+      transform: translate(-107px, -8px);
+    }
+
+
+    4% {
+      transform: translate(20px, 5px);
+    }
+
+    5.6% {
+      transform: translate(10px, -1px);
+    }
+
+    6.4% {
+      transform: translate(3px, 1px);
+    }
+
+    8% {
+      transform: translate(0px, 4px);
+    }
+
+    90% {
+      transform: translate(0px, 4px);
+    }
+
+  }
+
+
+  @keyframes fadeOut{
+
+    8% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    84% {
+      transform: translate(0px, 0px);
+    }
+
+    85.6% {
+      transform: translate(-10px, -1px);
+    }
+
+    86.4% {
+      transform: translate(3px, 1px);
+    }
+
+    88% {
+      transform: translate(0px, 0px);
+    }
+
+
+
+    90% {
+      opacity: 0;
+    }
+
+  }
+
+
+  @keyframes PopVector2{
+
+    18% {
+      opacity: 0;
+      transform: translate(65px,-45px);
+    }
+
+    20% {
+      opacity: 1;
+      transform: translate(13px, 9px);
+    }
+
+    23% {
+      transform: translate(20px,0px);
+    }
+
+    75% {
+      opacity: 1;
+      transform: translate(20px,0px);
+    }
+
+    90% {
+      opacity: 0;
+      transform: translate(20px,0px);
+    }
+
+  }
+
+  @keyframes PopPurpleBox {
+
+    18% {
+      opacity: 0;
+      transform: translate(78px,-90px);
+    }
+
+    19% {
+      opacity: 1;
+      transform: translate(-26px, 30px);
+    }
+
+    23% {
+      transform: translate(-1px,-2px);
+    }
+
+    75% {
+      opacity: 1;
+      transform: translate(-1px,-2px);
+    }
+
+    90% {
+      opacity: 0;
+      transform: translate(-1px,-2px);
+    }
+
+  }
+
+  @keyframes PopGreenBox {
+
+    18% {
+      opacity: 0;
+      transform: translate(-6px,-114px);
+    }
+
+    20% {
+      opacity: 1;
+      transform: translate(10px, 10px);
+    }
+
+    23% {
+      transform: translate(0px,-9px);
+    }
+
+    75% {
+      opacity: 1;
+      transform: translate(0px,-9px);
+    }
+
+    90% {
+      opacity: 0;
+      transform: translate(0px,-9px);
+    }
+
+  }
+
+  @keyframes PopVector3 {
+
+    18% {
+      opacity: 0;
+      transform: translate(8px,-55px);
+    }
+
+    20% {
+      opacity: 1;
+      transform: translate(15px, 15px);
+    }
+
+    23% {
+      transform: translate(15px,-1px);
+    }
+
+    75% {
+      opacity: 1;
+      transform: translate(15px,-1px);
+    }
+
+    90% {
+      opacity: 0;
+      transform: translate(15px,-1px);
+    }
+
+  }
+
+  @keyframes PopVector4 {
+
+    18% {
+      opacity: 0;
+      transform: translate(45px,-100px);
+    }
+
+    20% {
+      opacity: 1;
+      transform: translate(-3px, 25px);
+    }
+
+    23% {
+      transform: translate(1px,3px);
+    }
+
+    75% {
+      opacity: 1;
+      transform: translate(1px,3px);
+    }
+
+    90% {
+      opacity: 0;
+      transform: translate(1px,3px);
+    }
+
+  }
+
+
+  .Trinity {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transform: translate(0, 0px); 
+    animation: FadeOut 2s infinite ease-in;
+  }
+
+
+  .AnimationElements .Trinity .Vector2 {
+    transform: translate(20px,0px);
+    z-index: 0;
+    opacity: 0;
+    transform: translate(65px,-45px);
+    animation: PopVector2 2s infinite ease-in;
+  }
+
+  .AnimationElements .Trinity .Vector3 {
+    transform: translate(15px,-1px);
+    z-index: 0;
+    opacity: 0;
+    transform: translate(8px,-55px);
+    animation: PopVector3 2s infinite ease-in;
+  }
+
+  .AnimationElements .Trinity .Vector4 {
+    transform: translate(1px,3px);
+    z-index: 0;
+    opacity: 0;
+    transform: translate(45px,-100px);
+    animation: PopVector4 2s infinite ease-in;
+  }
+
+
+  .Trinity .purple-green-boxes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Trinity .PurpleBox {
+    transform: translate(-1px,-2px);
+    width: 24px;
+    height: 24px;
+    margin: 0.5px 1.5px 0 7px;
+    border-radius: 16px;
+    border: solid 15px #9c4dd3;
+    background-color: #9c4dd3;
+    z-index: 0;
+    opacity: 0;
+    transform: translate(78px,-90px);
+    animation: PopPurpleBox 2s infinite ease-in;
+    
+  }
+  
+  .Trinity .GreenBox {
+    transform: translate(0px,-9px);
+    width: 24px;
+    height: 24px;
+    margin: 3.7px 0 7.5px 3.8px;
+    border-radius: 16px;
+    border: solid 15px #049e38;
+    background-color: #049e38;
+    z-index: 0;
+    opacity: 0;
+    transform: translate(-6px,-114px);
+    animation: PopGreenBox 2s infinite ease-in;
+
+  }
+
+
+
